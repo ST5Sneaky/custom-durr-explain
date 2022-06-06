@@ -2,7 +2,7 @@ var intervalID = window.setInterval(isPopupOpen, 200);
 var aWindow = 0;
 
 function openPopup() {
-	aWindow = window.open("HURRRRRRRRRRRRRRRRR.html", "HURRrrRRrrr-DuUUUUUUUuUuUURRRRR", 'resizable=no, width=640, height=580');
+	aWindow = window.open("index.html", "HURRrrRRrrr-DuUUUUUUUuUuUURRRRR", 'resizable=no, width=640, height=580');
 	
 	while (aWindow == null) {	
 		if (confirm("HURRrrRRrrr-DuUUUUUUUuUuUURRRRR!!!\nYou must enable pop-ups for the site to work correctly."))
@@ -14,7 +14,7 @@ function openPopup() {
 
 function isPopupOpen() {	
     if (!aWindow || aWindow && aWindow.closed) {	
-		document.getElementById('hurr-picon').src = "images/popup-blocked.png";
+		document.getElementById('hurr-picon').src = "popup-blocked.png";
 		
 		return false;
 	}
