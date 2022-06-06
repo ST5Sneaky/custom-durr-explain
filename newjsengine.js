@@ -31,11 +31,11 @@ function clckBegin() {
 
 	if (!isPopupOpen()) {
 		openPopup();
-		picon.src = "images/popup-allowed.png";
+		picon.src = "popup-allowed.png";
 	}
 	else {
 		aWindow.close();
-		picon.src = "images/popup-blocked.png";
+		picon.src = "popup-blocked.png";
 	}
 	
 	// Attempt to close the window, it works if entered via a Discord link, for instance. Weird.
