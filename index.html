@@ -2,54 +2,6 @@
 	<head>
 		<title>Modded HURR DURR</title>
 		
-		<script>
-			var intervalID = window.setInterval(isPopupOpen, 200);
-var aWindow = 0;
-
-function openPopup() {
-	aWindow = window.open("HURRRRRRRRRRRRRRRRR.html", "HURRrrRRrrr-DuUUUUUUUuUuUURRRRR", 'resizable=no, width=640, height=580');
-	
-	while (aWindow == null) {	
-		if (confirm("HURRrrRRrrr-DuUUUUUUUuUuUURRRRR!!!\nYou must enable pop-ups for the site to work correctly."))
-			aWindow = window.open("HURRRRRRRRRRRRRRRRR.html", "HURRrrRRrrr-DuUUUUUUUuUuUURRRRR", 'resizable=no, width=640, height=580');  
-	}
-	
-	return true;
-}
-
-function isPopupOpen() {	
-    if (!aWindow || aWindow && aWindow.closed) {	
-		document.getElementById('hurr-picon').src = "images/popup-blocked.png";
-		
-		return false;
-	}
-	
-	return true;
-}
-
-document.addEventListener('click', clckBegin);
-
-function clckBegin() {		
-	var picon = document.getElementById('hurr-picon');
-
-	picon.addEventListener('click', clckBegin);
-
-	if (!isPopupOpen()) {
-		openPopup();
-		picon.src = "popup-allowed.png";
-	}
-	else {
-		aWindow.close();
-		picon.src = "popup-blocked.png";
-	}
-	
-	// Attempt to close the window, it works if entered via a Discord link, for instance. Weird.
-	window.open('', '_self').close();
-	
-	document.removeEventListener('click', clckBegin);
-	return true;
-}
-		</script>
 		
 		<meta name="Author" content="SneakyTank5, original by Enderman/Endermanch">
 		<meta name="Keywords" content="hurr-durr, hurr, durr, hurrdurr, dog, meme, hurr-durr.cc, hurr-durr.com, hurr durr, hurr durr dog">
@@ -65,7 +17,7 @@ function clckBegin() {
 		<meta property="og:image:height" content="256">
 		<meta property="og:image:alt" content="HURR-DURR">
 
-		<link rel="stylesheet" href="/styles/styles.css">
+		<link rel="stylesheet" href="HURR-DURR_files/banner_styles.css">
 		<script src="newjsengine.js"></script>
 	</head>
 	
@@ -77,7 +29,7 @@ function clckBegin() {
 				<a class="link" href="https://www.youtube.com/c/Endermanch">orginal creator</a>
 			</div>
 			
-			<img class="popup" id="hurr-picon" src="popup-blocked.png">
+			
 		</div>
 	
 		<img src="HURR-DURR_files/hurr.gif" alt="HuRR">
