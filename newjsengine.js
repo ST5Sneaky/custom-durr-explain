@@ -14,7 +14,6 @@ function openPopup() {
 
 function isPopupOpen() {	
     if (!aWindow || aWindow && aWindow.closed) {	
-		document.getElementById('hurr-picon').src = "popup-blocked.png";
 		
 		return false;
 	}
@@ -31,11 +30,11 @@ function clckBegin() {
 
 	if (!isPopupOpen()) {
 		openPopup();
-		picon.src = "popup-allowed.png";
+		
 	}
 	else {
 		aWindow.close();
-		picon.src = "popup-blocked.png";
+		
 	}
 	
 	// Attempt to close the window, it works if entered via a Discord link, for instance. Weird.
